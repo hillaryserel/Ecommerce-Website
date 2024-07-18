@@ -942,7 +942,8 @@ body {
 }
 
 #map{
-    height: 180px;
+    height: 72vh;
+    width: 100%;
 }
 
 
