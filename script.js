@@ -21,3 +21,6 @@ $(document).ready(function () {
   $(".menu-items a").click(function () {
     $("#checkbox").prop("checked", false);
   });
+
+  //initialize the map and set its view to our chosen geographical coordinates and a zoom level
+  var map = L.map('map').setView([51.505, -0.09], 13);
