@@ -76,16 +76,6 @@ body {
     margin-left: 3rem;
 }
 
-#menu {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #333;
-    color: #fff;
-    padding: 10px;
-    z-index: 1000;
-}
-
 .menu-items {
     order: 2;
     display: flex;
