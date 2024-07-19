@@ -48,6 +48,14 @@ body {
     margin: 0 10px;
 }
 
+.price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+.colors i {
+    margin-right: 5px;
+}
+
 
 /* //........ Navbar ........// */
 
