@@ -1,55 +1,69 @@
-       
 $(document).ready(function () {
+    // Smooth scroll for anchor links
     $("a").on("click", function (event) {
-      if (this.hash !== "") {
-        event.preventDefault();
-  
-        var hash = this.hash;
-        $("html, body").animate(
-          {
-            scrollTop: $(hash).offset().top,
-          },
-          800,
-          function () {
-            window.location.hash = hash;
-          }
-        );
-      }
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top,
+                },
+                800,
+                function () {
+                    window.location.hash = hash;
+                }
+            );
+        }
     });
-  });
-  
-  $(".menu-items a").click(function () {
-    $("#checkbox").prop("checked", false);
-  });
 
-  //initialize the map and set its view to our chosen geographical coordinates and a zoom level
-  var map = L.map('map').setView([-1.2909493949631206, 36.714898326804374], 10);
+    // Hide menu items on click
+    $(".menu-items a").click(function () {
+        $("#checkbox").prop("checked", false);
+    });
 
-  //add a tile layer to add to our map, in this case it’s a OpenStreetMap tile layer
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+    // Initialize the map
+    var map = L.map('map').setView([-1.2909493949631206, 36.714898326804374], 14);
 
-//HTML5 Navigation
-navigator.geolocation.watchPosition(success, error);
+    // Add OpenStreetMap tile layer
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
 
-function success(position){
-    const lat = pos.coords.latitude;
-    const lng = pos.coords.longitude;
-    const accuracy = pos.coords.accuracy;
+    // HTML5 Geolocation
+    navigator.geolocation.watchPosition(success, error);
 
-   let marker= L.marker([lat, lng]).addTo(map);
-   let circle= L.marker([lat, lng], {radius, accuracy}).addTo(map);
+    function success(pos) {
+        const lat = pos.coords.latitude;
+        const lng = pos.coords.longitude;
+        const accuracy = pos.coords.accuracy;
 
-    map.fitBoundS(circle.getBounds());
-}
+        // Remove existing marker and circle if they exist
+        if (marker) {
+            map.removeLayer(marker);
+            map.removeLayer(circle);
+        }
 
-function error(err){
-    if (err.code === 1){
-        alert("Please allow location access");
-    }else{
-        alert("Cannot get current location");
+        // Add marker and circle to map
+        marker = L.marker([lat, lng]).addTo(map);
+        circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
+
+        // Zoom to the accuracy circle bounds
+        if (!zoomed) {
+            zoomed = map.fitBounds(circle.getBounds());
+        }
+
+        // Set map view to current position
+        map.setView([lat, lng]);
     }
-}
 
+    function error(err) {
+        if (err.code === 1) {
+            alert("Please allow location access.");
+        } else {
+            alert("Cannot get current location.");
+        }
+    }
+
+    let marker, circle, zoomed;
+});
