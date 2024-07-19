@@ -31,6 +31,7 @@ $(document).ready(function () {
     }).addTo(map);
 
     // HTML5 Geolocation
+    let marker, circle, zoomed;
     navigator.geolocation.watchPosition(success, error);
 
     function success(pos) {
@@ -65,5 +66,5 @@ $(document).ready(function () {
         }
     }
 
-    let marker, circle, zoomed;
+    
 });
