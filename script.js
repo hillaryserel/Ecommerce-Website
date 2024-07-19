@@ -20,15 +20,7 @@ $(document).ready(function () {
     $(".menu-items a").click(function () {
         $("#checkbox").prop("checked", false);
     });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var prices = document.querySelectorAll('.price');
-        prices.forEach(function (priceElement) {
-            var price = priceElement.getAttribute('data-price');
-            priceElement.innerHTML = 'KSh ' + price + priceElement.innerHTML.split(/(\d+)/)[2];
-        });
-    });
-
+    
     // Initialize the map
     var map = L.map('map').setView([-1.2909493949631206, 36.714898326804374], 14);
 
