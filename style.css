@@ -623,6 +623,9 @@ body {
 .seller .best-p1 img {
     height: 250px;
     width: 250px;
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
 }
 
 .seller .best-p1 img:hover {
