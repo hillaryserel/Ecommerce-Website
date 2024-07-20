@@ -654,21 +654,6 @@ body {
     cursor: pointer;
 }
 
-.image-container p {
-    position: absolute;
-    top: 50%; /* Adjust as needed */
-    left: 50%; /* Adjust as needed */
-    transform: translate(-50%, -50%);
-    /* Other paragraph styles here */
-}
-
-.image-container:hover img,
-.image-container:hover p {
-    /* Styles to apply when hovered */
-    /* For example, change opacity or add a background color */
-}
-
-
 .best-seller .buy-now a {
     text-decoration: none;
     color: var(--white);
@@ -678,8 +663,7 @@ body {
     color: #f05e8a;
 }
 
-.best-seller .buy-now button,
-.best-seller .add-cart button {
+.best-seller .buy-now button{
     padding: 10px 15px;
     margin-top: 5px;
     font-size: 14px;
