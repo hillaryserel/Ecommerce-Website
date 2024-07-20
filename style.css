@@ -642,6 +642,33 @@ body {
     background-color: #000;
 }
 
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    height: 250px;
+    width: 250px;
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+}
+
+.image-container p {
+    position: absolute;
+    top: 50%; /* Adjust as needed */
+    left: 50%; /* Adjust as needed */
+    transform: translate(-50%, -50%);
+    /* Other paragraph styles here */
+}
+
+.image-container:hover img,
+.image-container:hover p {
+    /* Styles to apply when hovered */
+    /* For example, change opacity or add a background color */
+}
+
+
 .best-seller .buy-now a {
     text-decoration: none;
     color: var(--white);
