@@ -625,6 +625,10 @@ body {
     width: 250px;
 }
 
+.seller .best-p1 img:hover {
+    transform: scale(1.05);
+  }
+
 .seller .best-p1 .price {
     display: flex;
     justify-content: space-between;
