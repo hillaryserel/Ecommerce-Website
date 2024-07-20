@@ -624,12 +624,12 @@ body {
     height: 250px;
     width: 250px;
     border-radius: 23px;
-    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    transition: 400ms;
     cursor: pointer;
 }
 
 .seller .best-p1 img:hover {
-    transform: scale(1.09);
+    transform: scale(1.1, 1.1);
   }
 
 .seller .best-p1 .price {
