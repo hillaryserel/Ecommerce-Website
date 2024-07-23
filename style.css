@@ -1121,23 +1121,64 @@ footer {
 }
 
 .form .form-details button {
-    padding: 15px 25px;
-    color: var(--white);
-    font-weight: 500;
-    background: var(--black);
-    outline: none;
+    height: 50px;
+    width: 150px;
     border: none;
-    margin: 15px;
-    font-size: 14px;
-    letter-spacing: 2px;
+    border-radius: 10px;
     cursor: pointer;
+    position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-}
-
-.form .form-details button:hover{
-    box-shadow: .5px .5px 150px #252525;
-}
+  }
+  
+  .form .form-details .button.type1:hover {
+    box-shadow: 0px 0px 15px #252525; /* Corrected box-shadow values */
+  }
+  
+  .form .form-details .button.type1::after {
+    content: "Thanks";
+    height: 50px;
+    width: 150px;
+    background-color: #008080;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(50px);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .form .form-details .button.type1::before {
+    content: "Hover Me";
+    height: 50px;
+    width: 150px;
+    background-color: #fff;
+    color: #008080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0px) scale(1.2);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .form .form-details .button.type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
+  
+  .form .form-details .button.type1:hover::after {
+    transform: translateY(0) scale(1.2);
+  }
+  
 
 
 /* //....... Media Queries .......// */
