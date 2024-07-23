@@ -1121,9 +1121,11 @@ footer {
 }
 
 .form .form-details button {
+    padding: 15px 25px;
     height: 50px;
     width: 150px;
     border: none;
+    margin: 15px;
     border-radius: 10px;
     cursor: pointer;
     position: relative;
@@ -1155,14 +1157,14 @@ footer {
   
   .form .form-details .button.type1::before {
     content: "SEND MESSAGE";
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 50px;
     background-color: #fff;
     color: #008080;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(0px) scale(1.2);
+    transform: translateY(0px) scale(1);
     font-size: 1.2rem;
     font-weight: 600;
     display: flex;
