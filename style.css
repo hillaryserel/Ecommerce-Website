@@ -1124,6 +1124,8 @@ footer {
     padding: 15px 25px;
     height: 50px;
     width: 150px;
+    color: var(--white);
+    font-weight: 500;
     outline: none;
     border: none;
     margin: 15px;
