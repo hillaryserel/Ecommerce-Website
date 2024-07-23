@@ -1154,9 +1154,9 @@ footer {
   }
   
   .form .form-details .button.type1::before {
-    content: "Hover Me";
-    height: 50px;
-    width: 150px;
+    content: "SEND MESSAGE";
+    height: 100px;
+    width: 100px;
     background-color: #fff;
     color: #008080;
     position: absolute;
@@ -1171,13 +1171,13 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   
-  .form .form-details .button.type1:hover::before {
-    transform: translateY(-50px) scale(0) rotate(120deg);
-  }
-  
-  .form .form-details .button.type1:hover::after {
+  form .form-details .button.type1.clicked::after {
     transform: translateY(0) scale(1.2);
-  }
+}
+
+.form .form-details .button.type1.clicked::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+}
   
 
 

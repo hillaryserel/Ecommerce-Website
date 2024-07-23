@@ -68,3 +68,8 @@ $(document).ready(function () {
 
     
 });
+
+
+document.querySelector('.button.type1').addEventListener('click', function() {
+    this.classList.add('clicked');
+});
