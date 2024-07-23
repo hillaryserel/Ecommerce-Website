@@ -1131,6 +1131,12 @@ footer {
     font-size: 14px;
     letter-spacing: 2px;
     cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.form .form-details button:hover{
+    box-shadow: .5px .5px 150px #252525;
 }
 
 
