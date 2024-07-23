@@ -288,6 +288,7 @@ body {
     align-items: center;
     margin-bottom: 30px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .home_txt .bx-right-arrow-alt {
