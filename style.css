@@ -1163,7 +1163,7 @@ footer {
   .form .form-details .button.type1::before {
     content: "SEND MESSAGE";
     height: 150px;
-    width: 50px;
+    width: 150px;
     background-color: #fff;
     color: #008080;
     position: absolute;
