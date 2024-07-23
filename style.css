@@ -291,6 +291,11 @@ body {
     transition: background-color 0.3s, transform 0.3s;
 }
 
+.home_txt button:hover {
+    background-color: #ff4a4a; /* Background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
 .home_txt .bx-right-arrow-alt {
     font-size: 25px;
     padding-left: 5px;
@@ -300,9 +305,13 @@ body {
     text-decoration: none;
     color: var(--light-black);
     margin-right: 15px;
-    font-size: 18px;
+    font-size: 24px;
+    transition: color 0.3s;
 }
 
+.home_social_icons a:hover {
+    color: #ff6f61;
+}
 
 /* //........ Collections ........// */
 
@@ -959,6 +968,7 @@ body {
 #map{
     height: 600px;
     width: 100%;
+    z-index: 1;
    
 }
 
