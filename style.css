@@ -1143,7 +1143,7 @@ footer {
   }
   
   .form .form-details .button.type1::after {
-    content: "Thank you";
+    content: "Thanks";
     height: 50px;
     width: 150px;
     background-color: #008080;
@@ -1151,7 +1151,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(50px);
+    transform: translateY(50px); /* Start off-screen */
     font-size: 1.2rem;
     font-weight: 600;
     display: flex;
@@ -1161,15 +1161,15 @@ footer {
   }
   
   .form .form-details .button.type1::before {
-    content: "SEND MESSAGE";
-    height: 150px;
+    content: "Message Us";
+    height: 50px;
     width: 150px;
-    background-color: #fff;
+    background-color: #f3eeeea1;
     color: #008080;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(0px) scale(1);
+    transform: translateY(0px) scale(1); /* Initially visible */
     font-size: 1.2rem;
     font-weight: 600;
     display: flex;
@@ -1178,13 +1178,14 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   
-  form .form-details .button.type1.clicked::after {
-    transform: translateY(0) scale(1.2);
-}
+  .form .form-details .button.type1.clicked::after {
+    transform: translateY(0) scale(1.2); /* Move into view */
+  }
+  
+  .form .form-details .button.type1.clicked::before {
+    transform: translateY(-50px) scale(0) rotate(120deg); /* Move out of view */
+  }
 
-.form .form-details .button.type1.clicked::before {
-    transform: translateY(-50px) scale(0) rotate(120deg);
-}
   
 
 
