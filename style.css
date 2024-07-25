@@ -630,6 +630,11 @@ body {
     /* border: 2px solid black; */
 }
 
+.seller .best-p1-txt{
+    margin-top: 10px;
+
+}
+
 .seller .best-p1 img {
     height: 250px;
     width: 250px;
