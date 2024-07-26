@@ -266,7 +266,7 @@ body {
 }
 
 .home_txt .home_label p {
-    color: grey;
+    color: rgb(223, 219, 219);
     font-size: 14px;
     padding-top: 10px;
 }
