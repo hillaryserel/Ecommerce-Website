@@ -233,7 +233,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
-    background-color: #f7f7f7;
+    background-color: #fff;
 }
 
 .search-bar input[type="text"] {
