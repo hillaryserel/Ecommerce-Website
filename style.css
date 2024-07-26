@@ -84,7 +84,7 @@ body {
 }
 
 .navbar img {
-    margin-left: 3rem;
+    
 }
 
 .menu-items {
@@ -239,6 +239,7 @@ body {
     justify-content: center;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    margin-left: 15px;
     overflow: hidden;
     cursor: pointer;
     padding-left: 15px;
