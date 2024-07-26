@@ -71,6 +71,8 @@ body {
     background: var(--white);
     color: var(--black);
     z-index: 100;
+    display: flex;
+
 }
 
 .navbar-container {
@@ -78,6 +80,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 64px;
+    padding: 0 1rem;
 }
 
 .navbar img {
