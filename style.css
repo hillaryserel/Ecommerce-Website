@@ -104,6 +104,7 @@ body {
     color: var(--black);
     font-size: 18px;
     position: relative;
+    transition: color 0.3s;
 }
 
 .navbar-container ul a:after {
