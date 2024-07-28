@@ -297,6 +297,28 @@ body {
     transition-duration: .3s;
   }
 
+  .results-container {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1rem;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.result-item {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+
 /* //........ Home ........// */
 
 .home_page img {

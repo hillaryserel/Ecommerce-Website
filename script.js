@@ -73,3 +73,47 @@ $(document).ready(function () {
 document.querySelector('.button.type1').addEventListener('click', function() {
     this.classList.add('clicked');
 });
+
+// Filter the results based on user input.
+document.addEventListener('DOMContentLoaded', () => {
+    // Sample data for demonstration
+    const data = [
+        "Shoes",
+        "Boots",
+        "Sunglasses",
+        "Sneakers",
+        "Jacket",
+    ];
+
+    // Function to filter results based on input
+    function filterResults(query) {
+        return data.filter(item => item.toLowerCase().includes(query.toLowerCase()));
+    }
+
+    // Function to display filtered results
+    function displayResults(results) {
+        const resultsContainer = document.querySelector('.results-container');
+        resultsContainer.innerHTML = '';
+        results.forEach(result => {
+            const resultItem = document.createElement('div');
+            resultItem.className = 'result-item';
+            resultItem.textContent = result;
+            resultsContainer.appendChild(resultItem);
+        });
+    }
+
+    // Event listener for input
+    const searchInput = document.querySelector('.input');
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value;
+        const filteredResults = filterResults(query);
+        displayResults(filteredResults);
+    });
+
+    // Optional: Event listener for the microphone button
+    const micButton = document.querySelector('.micButton');
+    micButton.addEventListener('click', () => {
+        alert('Microphone button clicked');
+        // Add functionality for microphone input here
+    });
+});
