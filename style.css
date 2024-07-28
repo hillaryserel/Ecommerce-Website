@@ -1255,7 +1255,7 @@ footer {
   }
   
   .form .form-details .button.type1::before {
-    content: "Message Us";
+    content: "Message Me";
     height: 50px;
     width: 150px;
     background-color: #111010d3;
