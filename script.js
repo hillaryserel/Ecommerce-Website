@@ -119,3 +119,4 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('Speech Recognition API not supported in this browser.');
 }
 });
+});
