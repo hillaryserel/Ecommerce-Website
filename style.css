@@ -34,6 +34,9 @@ body {
     background-color: var(--black);
 }
 
+.top-txt, .head {
+    width: 100%;
+}
 .head {
     display: flex;
     justify-content: space-between;
@@ -41,8 +44,8 @@ body {
     padding: 10px 0;
     font-size: 14px;
 }
-.head-txt{
-    align-items: center;
+.head-txt p{
+    text-align: center;
 }
 
 .head a {
