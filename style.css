@@ -1094,12 +1094,16 @@ footer {
     font-size: 18px;
 }
 
-.footer-container a {
+.footer-container a{
     display: block;
     text-decoration: none;
     color: var(--grey);
     margin-bottom: 15px;
     font-size: 14px;
+}
+
+.footer-container a:hover {
+    color: var(--primary-color);     
 }
 
 .footer-container .content_1 p,
