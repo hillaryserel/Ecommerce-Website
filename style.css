@@ -147,7 +147,7 @@ body {
         cursor: pointer;
     }
     .navbar-container .hamburger-lines {
-        display: flex;
+        display: block;
         height: 28px;
         width: 35px;
         position: absolute;
