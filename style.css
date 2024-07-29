@@ -333,7 +333,7 @@ body {
 }
 
 .home_txt {
-    position: relative;
+    position: absolute;
     top: 37%;
     left: 5%;
 }
