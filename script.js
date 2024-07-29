@@ -110,10 +110,12 @@ document.addEventListener('DOMContentLoaded', () => {
         displayResults(filteredResults);
     });
 
-    // Optional: Event listener for the microphone button
+    // Event listener for the microphone button
     const micButton = document.querySelector('.micButton');
     micButton.addEventListener('click', () => {
-        alert('Microphone button clicked');
-        // Add functionality for microphone input here
+        recognition.start();
     });
+} else {
+    console.warn('Speech Recognition API not supported in this browser.');
+}
 });
