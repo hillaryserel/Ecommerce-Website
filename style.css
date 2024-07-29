@@ -381,8 +381,8 @@ body {
 }
 
 .home_txt button:hover {
-    background-color: #ff4a4a; /* Background color on hover */
-    transform: scale(1.05); /* Slightly enlarge the button on hover */
+    background-color: #ff4a4a; 
+    transform: scale(1.05); 
 }
 
 .home_txt .bx-right-arrow-alt {
