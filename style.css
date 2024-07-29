@@ -44,8 +44,16 @@ body {
     padding: 10px 0;
     font-size: 14px;
 }
-.head-txt p{
-    text-align: center;
+.head-txt {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50px; /* Adjust the height as needed */
+}
+
+.head-txt p {
+    margin: 150px; /* Remove default margin */
+    text-align: center; /* Ensure text inside p is centered */
 }
 
 .head a {
