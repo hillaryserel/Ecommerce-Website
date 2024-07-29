@@ -30,9 +30,8 @@ body {
 
 /* //........top text ........// */
 
-.top-txt.head-txt {
+.top-txt {
     background-color: var(--black);
-    align-items: center;
 }
 
 .head {
@@ -41,6 +40,9 @@ body {
     color: rgba(255, 255, 255, 0.945);
     padding: 10px 0;
     font-size: 14px;
+}
+.head-txt{
+    align-items: center;
 }
 
 .head a {
