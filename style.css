@@ -30,8 +30,9 @@ body {
 
 /* //........top text ........// */
 
-.top-txt {
+.top-txt.head-txt {
     background-color: var(--black);
+    align-items: center;
 }
 
 .head {
