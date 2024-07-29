@@ -37,6 +37,7 @@ body {
 .top-txt, .head {
     width: 100%;
 }
+
 .head {
     display: flex;
     justify-content: space-between;
@@ -46,14 +47,14 @@ body {
 }
 .head-txt {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 50px; /* Adjust the height as needed */
+    justify-content: center;
+    align-items: center; 
+    height: 30px; 
 }
 
 .head-txt p {
-    margin: 150px; /* Remove default margin */
-    text-align: center; /* Ensure text inside p is centered */
+    margin: 100px;
+    text-align: center;
 }
 
 .head a {
