@@ -147,7 +147,7 @@ body {
         cursor: pointer;
     }
     .navbar-container .hamburger-lines {
-        display: block;
+        display: flex;
         height: 28px;
         width: 35px;
         position: absolute;
@@ -1083,6 +1083,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
+
 }
 
 .footer-container h4 {
