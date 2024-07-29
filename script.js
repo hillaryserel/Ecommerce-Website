@@ -110,10 +110,31 @@ document.addEventListener('DOMContentLoaded', () => {
         displayResults(filteredResults);
     });
 
-    // Optional: Event listener for the microphone button
-    const micButton = document.querySelector('.micButton');
-    micButton.addEventListener('click', () => {
-        alert('Microphone button clicked');
-        // Add functionality for microphone input here
-    });
+    // Speech recognition setup
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognition) {
+        const recognition = new SpeechRecognition();
+        recognition.continuous = false;
+        recognition.interimResults = false;
+        recognition.lang = 'en-US';
+
+        recognition.onresult = (event) => {
+            const speechResult = event.results[0][0].transcript;
+            searchInput.value = speechResult;
+            const filteredResults = filterResults(speechResult);
+            displayResults(filteredResults);
+        };
+
+        recognition.onerror = (event) => {
+            console.error('Speech recognition error:', event.error);
+        };
+
+        // Event listener for the microphone button
+        const micButton = document.querySelector('.micButton');
+        micButton.addEventListener('click', () => {
+            recognition.start();
+        });
+    } else {
+        console.warn('Speech Recognition API not supported in this browser.');
+    }
 });
