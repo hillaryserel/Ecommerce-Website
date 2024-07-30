@@ -55,7 +55,7 @@ body {
 .head-txt p {
     margin: 100px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .head a {
@@ -79,7 +79,7 @@ body {
     padding: 0.5rem;
     border: 1px solid var(--primary-color); 
     border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.1s;
 }
 
 .sign_in_up a:hover {
