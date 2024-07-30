@@ -73,17 +73,17 @@ body {
 
 .sign_in_up a {
     text-decoration: none;
-    color: var(--primary-color); /* Adjust this color */
-    font-size: 1rem; /* Adjust the font size */
+    color: var(--primary-color); 
+    font-size: 1rem; 
     padding: 0.5rem 1rem;
-    border: 1px solid var(--primary-color); /* Adjust the border color */
+    border: 1px solid var(--primary-color); 
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .sign_in_up a:hover {
-    background-color: var(--primary-color); /* Adjust the hover background color */
-    color: #fff; /* Adjust the hover text color */
+    background-color: var(--primary-color); 
+    color: #fff; 
 }
 
 /* Form section styling */
