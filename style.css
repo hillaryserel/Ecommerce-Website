@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: center; /* Center horizontally */
     gap: 1rem; /* Space between the links */
-    margin-top: 1rem; /* Space above the links */
+    margin-bottom: 1rem; /* Space above the links */
 }
 
 .sign_in_up a {
