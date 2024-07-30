@@ -55,6 +55,7 @@ body {
 .head-txt p {
     margin: 100px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .head a {
@@ -75,9 +76,9 @@ body {
     text-decoration: none;
     color: var(--primary-color); 
     font-size: 1rem; 
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
     border: 1px solid var(--primary-color); 
-    border-radius: 5px;
+    border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
 }
 
