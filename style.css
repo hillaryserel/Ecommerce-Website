@@ -66,9 +66,9 @@ body {
 /* Styling for the sign in/up links */
 .sign_in_up {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    gap: 1rem; /* Space between the links */
-    margin-bottom: 1rem; /* Space above the links */
+    justify-content: center;
+    gap: 1rem; 
+    margin-bottom: 1rem; 
 }
 
 .sign_in_up a {
