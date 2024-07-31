@@ -76,7 +76,7 @@ body {
     text-decoration: none;
     color: var(--primary-color); 
     font-size: 1rem; 
-    padding: 0.5rem;
+    padding: 0.4rem;
     border: 1px solid var(--primary-color); 
     border-radius: 10px;
     transition: background-color 0.3s, color 0.1s;
@@ -85,49 +85,6 @@ body {
 .sign_in_up a:hover {
     background-color: var(--primary-color); 
     color: #fff; 
-}
-
-/* Form section styling */
-.form-section {
-    padding: 2rem;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 2rem auto;
-    width: 300px; 
-}
-
-.form-section h2 {
-    text-align: center;
-}
-
-.form-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-section label {
-    margin: 0.5rem 0 0.25rem;
-}
-
-.form-section input {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.form-section button {
-    padding: 0.5rem;
-    background-color: var(--primary-color); 
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.form-section button:hover {
-    background-color: darken(var(--primary-color), 10%); 
 }
 
 .price {
