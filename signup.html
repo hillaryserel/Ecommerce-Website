@@ -16,7 +16,12 @@
             <input type="password" id="signup-password" name="password" required>
             <label for="signup-confirm-password">Confirm Password:</label>
             <input type="password" id="signup-confirm-password" name="confirm_password" required>
-            <button type="submit">Sign Up</button>
+            <button class="submit">
+                Sign up
+                <div class="arrow-wrapper">
+                    <div class="arrow"></div>           
+                </div>
+            </button>
         </form>
     </section>
     <style media="screen">
@@ -55,17 +60,64 @@
 }
 
 .form-section button {
-    margin-top: 10px;
-    padding: 0.5rem;
-    background-color: rgb(40, 36, 36);
-    color: #fff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+  --primary-color: #645bff;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+
+.form-section button .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-section button .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.form-section button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
 }
 
 .form-section button:hover {
-    border: 5px solid #131314;
+  background-color: var(--hover-color);
+}
+
+.form-section button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.form-section button:hover .arrow:before {
+  right: 0;
 }
     </style>
 </body>
