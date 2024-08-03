@@ -227,5 +227,37 @@
             border: 1px solid #2d79f3;
         }
     </style>
+
+<script>
+    function onSuccess(googleUser) {
+        console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+        // Do something with the user info.
+        // You can send the ID token to your server for verification and user session management.
+    }
+
+    function onFailure(error) {
+        console.log(error);
+    }
+
+    function renderButton() {
+        gapi.signin2.render('googleSignInBtn', {
+            'scope': 'profile email',
+            'width': 240,
+            'height': 50,
+            'longtitle': true,
+            'theme': 'dark',
+            'onsuccess': onSuccess,
+            'onfailure': onFailure
+        });
+    }
+
+    gapi.load('auth2', function() {
+        gapi.auth2.init({
+            client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com'
+        }).then(function () {
+            renderButton();
+        });
+    });
+</script>
 </body>
 </html>
