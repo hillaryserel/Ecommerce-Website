@@ -335,6 +335,19 @@ body {
     background-color: rgb(255, 230, 230);
     transition-duration: .3s;
   }
+
+  @media (max-width: 600px) {
+    .micButton {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .micIcon {
+        width: 24px;
+    }
+}
 /* //........ Home ........// */
 
 .home_page img {
