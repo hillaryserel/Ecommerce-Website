@@ -304,7 +304,7 @@ body {
 }
 
 .home_txt .home_label p {
-    color: rgb(223, 219, 219);
+    color: var(--black);
     font-size: 14px;
     padding-top: 10px;
 }
@@ -674,9 +674,9 @@ body {
 }
 
 .seller .best-p1 img {
-    height: 250px;
-    width: 250px;
-    border-radius: 23px;
+    height: 200px;
+    width: 200px;
+    border-radius: .6rem;
     transition: 400ms;
     cursor: pointer;
 }
@@ -1007,74 +1007,46 @@ footer {
 }
 
 .footer-container .content_4 .f-mail button {
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
     cursor: pointer;
-  }
-  
-  .footer-container .content_4 .f-mail button {
-    --primary-color: #111;
-    --hovered-color: #c84747;
     position: relative;
-    display: flex;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: rgb(225, 220, 211);
+    border: 2px solid rgb(225, 220, 211);
+    border-radius: 5px;
+    background-color: transparent;
     font-weight: 600;
-    font-size: 20px;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  .footer-container .content_4 .f-mail button p {
-    margin: 0;
-    position: relative;
-    font-size: 20px;
-    color: var(--primary-color);
-  }
-  
-  .footer-container .content_4 .f-mail button::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    background: var(--hovered-color);
-    height: 2px;
-    transition: 0.3s ease-out;
-  }
-  
-  .footer-container .content_4 .f-mail button p::before {
-    position: absolute;
-    /*   box-sizing: border-box; */
-    content: "Subscribe";
-    width: 0%;
-    inset: 0;
-    color: var(--hovered-color);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
-    transition: 0.3s ease-out;
   }
   
-  .footer-container .content_4 .f-mail button:hover::after {
-    width: 100%;
+  .footer-container .content_4 .f-mail button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inheri;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--primary-color);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
-  .footer-container .content_4 .f-mail button:hover p::before {
-    width: 100%;
+  .footer-container .content_4 .f-mail button:hover::before {
+    scale: 3;
   }
   
-  .footer-container .content_4 .f-mail button:hover svg {
-    transform: translateX(4px);
-    color: var(--hovered-color);
+  .footer-container .content_4 .f-mail button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
   }
   
-  .footer-container .content_4 .f-mail button svg {
-    color: var(--primary-color);
-    transition: 0.2s;
-    position: relative;
-    width: 15px;
-    transition-delay: 0.2s;
-  }
-  
+  .button:active {
+    scale: 1;
+  }  
 
 .footer-container .content_4 .bx {
     color: var(--white);
@@ -1210,10 +1182,10 @@ footer {
   }
   
   .form .form-details .button.type1::before {
-    content: "Message Us";
+    content: "Message";
     height: 50px;
     width: 150px;
-    background-color: #111010d3;
+    background-color: #111010fe;
     color: #f3f8f8;
     position: absolute;
     top: 0;
