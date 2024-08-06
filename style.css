@@ -330,7 +330,7 @@ body {
 }
 
 .home_txt button:hover {
-    background-color: #ff4a4a; 
+    background-color: var(--primary-color);; 
     transform: scale(1.05); 
 }
 
