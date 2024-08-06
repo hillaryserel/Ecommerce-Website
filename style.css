@@ -110,8 +110,6 @@ body {
     background: var(--white);
     color: var(--black);
     z-index: 100;
-    display: flex;
-
 }
 
 .navbar-container {
