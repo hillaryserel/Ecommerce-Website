@@ -805,77 +805,7 @@ body {
     cursor: pointer;
 }
 
-
-/* //........ deal of week ........// */
-
-.deal_of_week {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.deal_of_week .names_of_brand p,
-.deal_of_week .names_of_brand h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.deal_of_week .names_of_brand p {
-    color: var(--grey);
-}
-
-.deal_of_week .countdown span {
-    color: var(--primary-color);
-    font-weight: 600;
-    letter-spacing: 2px;
-    margin: 0.8rem 0 0 3rem;
-}
-
-.deal_of_week .countdown h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--light-black);
-    line-height: 40px;
-    margin: 0.8rem 0 0 3rem;
-}
-
-.deal_of_week .countdown p {
-    margin: 0.8rem 0 0 3rem;
-}
-
-.deal_of_week .countdown a {
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 800;
-}
-
-.deal_of_week .countdown button {
-    margin: 0.8rem 3rem;
-    border: 2px solid var(--primary-color);
-    background-color: var(--primary-color);
-    color: var(--white);
-    border-radius: 10px;
-    padding: 12px;
-    transition: 0.4s;
-}
-
-.deal_of_week .countdown button:hover {
-    background: var(--white);
-    color: var(--primary-color);
-}
-
-.deal_of_week .countdown button:hover~.countdown a {
-    background: var(--white);
-    color: var(--primary-color);
-}
-
-.countdown a:hover {
-    color: var(--primary-color);
-}
-
-
 /* //........ NEWS ........// */
-
 #news {
     margin-bottom: 250px;
 }
