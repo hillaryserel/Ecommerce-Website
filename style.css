@@ -117,11 +117,10 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 64px;
-    padding: 0 1rem;
 }
 
 .navbar img {
-    height: 20px;
+   margin-left: 3rem;
 }
 
 .menu-items {
