@@ -1006,8 +1006,19 @@ footer {
     align-items: center;
 }
 
+.footer-container .content_4 .f-mail button{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
 .footer-container .content_4 .bx {
     color: var(--white);
+    margin-left: 0.5rem;
 }
 
 .f-design {
