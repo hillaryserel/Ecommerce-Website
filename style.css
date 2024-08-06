@@ -161,7 +161,7 @@ body {
     width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navbar {
         opacity: 0.95;
     }
@@ -266,7 +266,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .navbar-container input[type="checkbox"]:checked~.navbar-container img {
         display: none;
     }
@@ -336,7 +336,7 @@ body {
     transition-duration: .3s;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 400px) {
     .micButton {
         width: 100%;
         text-align: center;
