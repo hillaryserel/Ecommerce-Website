@@ -740,7 +740,7 @@ body {
 
 /* //........ NEWS ........// */
 #news {
-    margin-bottom: 250px;
+    margin-bottom: 200px;
 }
 
 .news-heading p {
@@ -761,7 +761,7 @@ body {
 }
 
 .l-news {
-    padding-top: 45px;
+    padding-top: 35px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
