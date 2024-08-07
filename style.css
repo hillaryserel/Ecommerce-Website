@@ -768,15 +768,10 @@ body {
     position: relative;
 }
 
-.l-news img {
-    height: 200px;
-    width: 300px;
-}
-
 .l-news1 {
     position: relative;
     width: 280px;
-    height: 230px;
+    height: 150px;
 }
 
 .l-news1 .news1-conte {
@@ -790,7 +785,7 @@ body {
 .l-news2 {
     position: relative;
     width: 280px;
-    height: 230px;
+    height: 150px;
 }
 
 .l-news2 .news2-conte {
@@ -804,7 +799,7 @@ body {
 .l-news3 {
     position: relative;
     width: 280px;
-    height: 230px;
+    height: 150px;
 }
 
 .l-news3 .news3-conte {
