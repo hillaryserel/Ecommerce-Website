@@ -1006,7 +1006,6 @@ footer {
     align-items: center;
 }
 
-/* From Uiverse.io by guilhermeyohan */ 
 .content_4 .subscribe {
     position: relative;
     height: 140px;
@@ -1031,10 +1030,10 @@ footer {
   }
   .content_4 .subscribe p {
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     letter-spacing: 4px;
-    line-height: 28px;
+    line-height: 2px;
   }
   
    .content_4  .subscribe input {
