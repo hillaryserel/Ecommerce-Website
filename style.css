@@ -993,7 +993,7 @@ footer {
 }
 
 .footer-container .content_4 input[type="email"] {
-    background-color: var(--white);
+    background-color: var(--light-black);
     border: none;
     color: var(--white);
     outline: none;
@@ -1214,7 +1214,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(0px) scale(1); /* Initially visible */
+    transform: translateY(0px) scale(1); 
     font-size: 1.2rem;
     font-weight: 600;
     display: flex;
@@ -1224,11 +1224,11 @@ footer {
   }
   
   .form .form-details .button.type1.clicked::after {
-    transform: translateY(0) scale(1.2); /* Move into view */
+    transform: translateY(0) scale(1.2); 
   }
   
   .form .form-details .button.type1.clicked::before {
-    transform: translateY(-50px) scale(0) rotate(120deg); /* Move out of view */
+    transform: translateY(-50px) scale(0) rotate(120deg); 
   }
 
   
