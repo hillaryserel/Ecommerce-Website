@@ -288,7 +288,7 @@ body {
 }
 
 .home_txt p {
-    color: var(--primary-color);
+    color: var(--light-black);
     font-weight: 600;
     padding-bottom: 20px;
     letter-spacing: 1.5px;
