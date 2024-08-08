@@ -304,7 +304,7 @@ body {
 }
 
 .home_txt .home_label p {
-    color: var(--black);
+    color: var(--white);
     font-size: 14px;
     padding-top: 10px;
 }
